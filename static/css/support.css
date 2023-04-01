@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*  font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');           /*  font-family: 'Open Sans', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html{
+  line-height: 1.2;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.nav{
+   display: flex;
+   justify-content: start;
+   padding: 1em;
+   border-bottom: 0.1em solid rgb(232, 232, 232);
+}
+.button{
+  font-family: 'Poppins', sans-serif;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.25em;
+  background-color: black;
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: rgb(50, 50, 50);
+}
+.donate{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.icons{
+   margin: 1rem;
+}
+.icons ul{
+   list-style: none;
+   display: flex;
+}
+.icons ul li img{
+   width: 2.5rem;
+   height: 2.5rem;
+}
+.waysToDonate{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+#Ymoney{
+   width: 6rem;
+   background-color: rgb(133, 111, 222);
+}
+#Ymoney:hover{
+   background-color: rgb(155, 132, 244);
+}
+#donAlerts{
+   width: 6rem;
+   background-color: rgb(235, 184, 75);
+}
+#donAlerts:hover{
+   background-color: rgb(255, 200, 82);
+}
