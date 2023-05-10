@@ -64,7 +64,7 @@ body {
   display: flex;
   gap: 0.6rem;
 }
-.main .projects a{
+.btn{
   font-family: 'Poppins', sans-serif;
   padding: 0.8rem;
   border: none;
@@ -74,7 +74,7 @@ body {
   color: aliceblue;
   text-decoration: none;
 }
-.main .projects a:hover{
+.btn:hover{
   cursor: pointer;
   background-color: rgb(50, 50, 50);
 }

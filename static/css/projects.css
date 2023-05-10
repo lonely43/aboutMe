@@ -16,13 +16,16 @@ html{
 body{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .nav{
-   display: flex;
-   justify-content: start;
-   padding: 1em;
-   border-bottom: 0.1em solid rgb(232, 232, 232);
+  display: flex;
+  align-self: flex-start;
+  justify-content: start;
+  padding: 1em;
+  border-bottom: 0.1em solid rgb(232, 232, 232);
+  width: 100%;
 }
 .button{
   font-family: 'Poppins', sans-serif;
@@ -40,10 +43,12 @@ body{
   background-color: rgb(50, 50, 50);
 }
 .projects{
-  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: grid;
   justify-content: center;
-  gap: 2rem;
-  width: 100%;
+  gap: 1.25rem;
 }
 .example{
   display: flex;
@@ -51,10 +56,12 @@ body{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
   text-align: center;
 
   border: 0.1rem solid rgb(232, 232, 232);
   border-radius: 1rem;
+
   padding: 2rem;
   height: 8rem;
 
@@ -79,9 +86,14 @@ body{
   text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 600px) {
   .projects{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .projects{
+    grid-template-columns: repeat(3,1fr);
   }
 }
