@@ -107,4 +107,7 @@ body{
 }
 .buttons .btn{
   width: 6rem;
+  font-size: 1.2em;
+  padding: 0.6rem 0rem;
+  text-align: center;
 }
