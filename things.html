@@ -12,17 +12,21 @@
    <div class="nav">
       <a class="btn" href="index.html">Home</a>
    </div>
-   <div class="things">
-      <h1>soon...</h1>
-      <div id="scene" class="imgDead">
-         <img data-depth="0.6" width="300" height="300" src="./static/img/dead.jpg" alt="img">
+   <div class="main">
+      <div class="pasGen">
+         <h1 class="pasGenText"> Password generation </h1>
+         <div class="generator">
+            <div class="text">
+               <h1 id="textGen"> Click "Create" </h1>
+            </div>
+            <div class="buttons">
+               <button id="crtBtn" class="btn" type="submit"> Create </button>
+               <button id="copyBtn" class="btn" type="submit"> Copy </button>
+            </div>
+         </div>
       </div>
    </div>
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-   <script>
-      var scene = document.getElementById('scene');
-      var parallaxInstance = new Parallax(scene);
-   </script>
+   
+   <script src="./static/js/things.js"></script>
 </body>
 </html>

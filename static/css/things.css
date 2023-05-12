@@ -19,31 +19,92 @@ body{
   gap: 1rem;
 }
 .nav{
-   display: flex;
-   justify-content: start;
-   padding: 1em;
-   border-bottom: 0.1em solid rgb(232, 232, 232);
+  display: flex;
+  justify-content: start;
+
+  padding: 1em;
+
+  border-bottom: 0.1rem solid rgb(232, 232, 232);
 }
 .things{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   gap: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
 }
 .imgDead img{
-   box-shadow: 0 0 2rem 0.6rem black;
+  box-shadow: 0 0 2rem 0.6rem black;
 }
 .btn{
-   font-family: 'Poppins', sans-serif;
-   padding: 0.8rem;
-   border: none;
-   border-radius: 1rem;
-   font-size: 1.25em;
-   background-color: black;
-   color: aliceblue;
-   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.8rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 1.25em;
+  text-decoration: none;
+  color: aliceblue;
+
+  background-color: black;
  }
  .btn:hover{
    cursor: pointer;
    background-color: rgb(50, 50, 50);
  }
+
+.main{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.pasGen{
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+
+  border: 0.1rem solid rgb(232, 232, 232);
+  border-radius: 1rem;
+}
+.pasGenText{
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid rgb(232, 232, 232);
+
+  text-align: center;
+}
+.generator{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.text{
+  padding: 1rem;
+
+  font-size: 0.6em;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+  
+  border: 0.1rem solid rgb(232, 232, 232);
+  border-radius: 1rem;
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons .btn{
+  width: 6rem;
+}
