@@ -89,6 +89,8 @@ body{
 }
 .text{
   padding: 1rem;
+  
+  min-width: 18rem;
 
   font-size: 0.6em;
   text-decoration: none;
