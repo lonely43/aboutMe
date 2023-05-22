@@ -34,10 +34,11 @@ body{
   color: aliceblue;
   text-decoration: none;
   text-align: center;
+  transition: 0.4s;
 }
 .button:hover{
   cursor: pointer;
-  background-color: rgb(50, 50, 50);
+  opacity: 0.85;
 }
 .donate{
    height: 100%;

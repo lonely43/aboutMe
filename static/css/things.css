@@ -47,10 +47,12 @@ body{
   color: aliceblue;
 
   background-color: black;
+
+  transition: 0.4s;
  }
  .btn:hover{
    cursor: pointer;
-   background-color: rgb(50, 50, 50);
+   opacity: 0.85;
  }
 
 .main{

@@ -73,8 +73,9 @@ body {
   background-color: black;
   color: aliceblue;
   text-decoration: none;
+  transition: 0.4s;
 }
 .btn:hover{
   cursor: pointer;
-  background-color: rgb(50, 50, 50);
+  opacity: 0.85;
 }
