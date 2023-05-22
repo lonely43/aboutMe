@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 html{
   line-height: 1.2;
@@ -27,7 +28,7 @@ body{
   border-bottom: 0.1em solid rgb(232, 232, 232);
   width: 100%;
 }
-.button{
+.btn{
   font-family: 'Poppins', sans-serif;
   padding: 0.8rem;
   border: none;
@@ -48,51 +49,82 @@ body{
 
   display: grid;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1.68rem;
 }
 .example{
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
   text-align: center;
 
   border: 0.1rem solid rgb(232, 232, 232);
   border-radius: 1rem;
 
-  padding: 2rem;
-  height: 8rem;
-
   background-color: rgb(255, 255, 255);
 }
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  border-bottom: 0.1rem solid rgb(232, 232, 232);
+}
+.icon img{
+  width: 100%;
+}
 .info{
+  padding: 1.25rem;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  text-align: center;
+}
+.info .text{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.4rem;
+
   text-align: center;
 }
-.reference{
+.info .text h1{
+  font-size: 2em;
+}
+.info .text p{
+  font-size: 1em;
+  color: rgb(96, 96, 96);
+}
+.info .reference{
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+
   text-align: center;
 
   width: 100%;
 }
-.reference .button{
+.info .reference .btn{
   width: 100%;
 
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .projects{
     grid-template-columns: repeat(2,1fr);
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .projects{
     grid-template-columns: repeat(3,1fr);
   }
