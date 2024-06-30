@@ -8,6 +8,7 @@ body{
   align-items: center;
 }
 main{
+  min-height: 100vh;
   padding-top: 10rem;
   width: 100%;
   position: relative;
