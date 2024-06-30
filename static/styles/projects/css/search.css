@@ -27,9 +27,11 @@
 .search ul li {
   position: relative;
 }
+.search ul li:first-child {
+  padding-left: 1rem;
+}
 .search ul li:last-child label {
   border-right: none;
-  padding-right: 0;
 }
 .search ul li input[type=checkbox] {
   z-index: 2;
