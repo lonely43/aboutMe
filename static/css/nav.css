@@ -1,0 +1,45 @@
+:root{
+   --arrow-width: 13px;
+   --arrows-offsetX: 0.6rem;
+}
+header{
+   display: flex;
+   align-self: flex-start;
+   justify-content: start;
+   padding: 1rem;
+   background-color: black;
+   width: 100%;
+}
+.btns{
+   display: flex;
+   gap: calc((var(--arrows-offsetX) * 2) + var(--arrow-width));
+}
+.btns span, .btns span a{
+   position: relative;
+   transition: opacity 0.2s;
+   color: white;
+}
+.btns span::before{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: calc(100% + (var(--arrows-offsetX)));
+   
+   height: auto;
+   width: var(--arrow-width);
+
+   content: ">";
+
+   font-size: 1.4em;
+   font-weight: 500;
+}
+.btns span:first-child::before{
+   display: none;
+}
+.btns span h1{
+   font-size: 1.4em;
+   font-weight: 500;
+}
+.btns span a:hover{
+   opacity: 0.8;
+}

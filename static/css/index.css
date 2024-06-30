@@ -1,21 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*  font-family: 'Poppins', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');           /*  font-family: 'Open Sans', sans-serif; */
-
-*{
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-html{
-  line-height: 1.2;
-  background-color: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  color: rgb(0, 0, 0);
-}
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100dvh;
 }
 .main{
   display: flex;
