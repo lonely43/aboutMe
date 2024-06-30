@@ -29,7 +29,7 @@ function showCards(array){
    document.querySelector(".projects").innerHTML = ``
 
    if(filteredCards.length <= 0){
-      document.querySelector(".projects").innerHTML= `<h1 style="font-weight:400">there's nothing here :(</h1>`
+      document.querySelector(".projects").innerHTML= `<h1 style="font-weight:400;text-align:center;">there's nothing here :(</h1>`
    }
    else{
       filteredCards.forEach(el => {
