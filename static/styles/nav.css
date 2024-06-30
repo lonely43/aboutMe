@@ -9,6 +9,8 @@ header{
    padding: 1rem;
    background-color: black;
    width: 100%;
+   position: relative;
+   margin-bottom: 10vw;
 }
 .btns{
    display: flex;
@@ -42,4 +44,13 @@ header{
 }
 .btns span a:hover{
    opacity: 0.8;
+}
+.custom-shape-divider-top-1719708639 {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   z-index: -3;
 }

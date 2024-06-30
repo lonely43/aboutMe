@@ -1,0 +1,41 @@
+.callMe {
+  width: 100%;
+  height: fit-content;
+}
+.callMe .content {
+  position: relative;
+  width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.callMe .content .info {
+  color: white;
+}
+.callMe .content .info h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.callMe .content .info p {
+  font-weight: 400;
+}
+.callMe .custom-shape-divider-bottom-1719755588 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateY(1px) rotate(180deg);
+}
+.callMe .custom-shape-divider-bottom-1719755588 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 46px;
+}
+.callMe .custom-shape-divider-bottom-1719755588 .shape-fill {
+  fill: #000000;
+}
+
+/*# sourceMappingURL=callMe.css.map */

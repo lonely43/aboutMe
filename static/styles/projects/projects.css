@@ -1,0 +1,14 @@
+@import url('./css/cards.css');
+@import url('./css/search.css');
+@import url('./css/callMe.css');
+
+main{
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+}
