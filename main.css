@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); /*  font-family: 'Open Sans', sans-serif; */
 
 @import url("./static/styles/nav.css");
+@import url("./base.css");
 
 *{
    line-height: 1.25;

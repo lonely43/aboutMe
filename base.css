@@ -1,3 +1,22 @@
 :root{
    --background-color: white;
 }
+
+.anim{
+   transition-property: opacity, transform;
+}
+.anim-end{
+   transform: translateX(0rem) !important;
+   opacity: 1 !important;
+}
+.anim-fade{
+   opacity: 0;
+}
+.anim-from-left{
+   transform: translateX(-8rem);
+}
+@media screen and (max-width:500px) {
+   .anim-from-left{
+      transform: translateX(-5rem);
+   }
+}

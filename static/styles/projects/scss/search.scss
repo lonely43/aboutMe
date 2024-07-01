@@ -28,25 +28,23 @@
       li{
          position: relative;
 
-         &:first-child{
-            padding-left: 1rem;
-         }
-
          &:last-child{
             label{
+               padding-right: 0;
                border-right: none;
             }
          }
 
          input[type="checkbox"]{
-            z-index: 2;
             left: 0;
             top: 50%;
             transform: scale(1.1) translateY(-50%);
             position: absolute;
             opacity: 0;
+            z-index: 3;
             width: var(--checkbox-size);
             height: var(--checkbox-size);
+
             cursor: pointer;
          }
          label::before{
@@ -56,9 +54,6 @@
             
             width: var(--checkbox-size);
             height: var(--checkbox-size);
-            
-            flex-shrink: 0;
-            flex-grow: 0;
          
             border: 1px solid #adb5bd;
             border-radius: 0.25em;

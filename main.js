@@ -22,3 +22,25 @@
       `
    }
 }
+
+// fade effect
+{
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if(entry.isIntersecting){
+            entry.target.classList.add("anim-end")
+         }else{
+            entry.target.classList.remove("anim-end")
+         }
+      });
+    });
+   
+   const els = document.querySelectorAll(".anim")
+   els.forEach(el => {
+         let smoothValue = el.getAttribute('anim-smooth');
+         if (smoothValue) {
+            el.style.transitionDuration = smoothValue + "s";
+         }
+      observer.observe(el)
+   })
+}
