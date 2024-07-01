@@ -41,6 +41,9 @@
          if (smoothValue) {
             el.style.transitionDuration = smoothValue + "s";
          }
+         else{
+            el.style.transitionDuration = "2s";
+         }
       observer.observe(el)
    })
 }
