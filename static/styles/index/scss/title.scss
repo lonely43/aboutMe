@@ -1,22 +1,30 @@
 .title{
    margin: auto auto;
    h1{
-      font-size: 10em;
+      transform: translateX(-.4rem);
+      font-size: 9.3rem;
    }
 
    p{
+      transform: translateY(-.8rem);
       font-size: 2em;
       font-weight: 300;
    }
 
-   @media screen and (max-width: 1000px) {
+   @media screen and (max-width: 800px) {
       h1{
          font-size: calc(20vw - 1rem);
+      }
+      p{
+         font-size: calc(5vw)
       }
    }
    @media screen and (max-width: 300px) {
       h1{
          font-size: calc(2.9em);
+      }
+      p{
+         font-size: 1.4em;
       }
    }
 }

@@ -25,11 +25,6 @@ a{
   cursor: pointer;
   color: initial;
 }
-.bound{
-   padding: 0 2rem;
-   width: 100%;
-   max-width: 50rem;
-}
 ::-webkit-scrollbar{
    width: 0rem;
 }
