@@ -1,0 +1,22 @@
+.title{
+   margin: auto auto;
+   h1{
+      font-size: 10em;
+   }
+
+   p{
+      font-size: 2em;
+      font-weight: 300;
+   }
+
+   @media screen and (max-width: 1000px) {
+      h1{
+         font-size: calc(20vw - 1rem);
+      }
+   }
+   @media screen and (max-width: 300px) {
+      h1{
+         font-size: calc(2.9em);
+      }
+   }
+}

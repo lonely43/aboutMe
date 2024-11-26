@@ -5,17 +5,17 @@
 @import url("./base.css");
 
 *{
-   line-height: 1.25;
-   box-sizing: border-box;
-
    padding: 0;
    margin: 0;
 
-   scroll-behavior: smooth;
+   box-sizing: border-box;
+   line-height: 1.25;
 
 	letter-spacing: 0.2px;
+   font-style: normal;
 	font-family: "Poppins", sans-serif;
-	font-style: normal;
+
+   scroll-behavior: smooth;
 }
 body{
 	background-color: rgb(255, 255, 255);
@@ -24,6 +24,11 @@ a{
   text-decoration: none;
   cursor: pointer;
   color: initial;
+}
+.bound{
+   padding: 0 2rem;
+   width: 100%;
+   max-width: 50rem;
 }
 ::-webkit-scrollbar{
    width: 0rem;
@@ -37,3 +42,14 @@ a{
 	color: rgb(255, 255, 255);
 	background: rgb(24, 24, 24);
  }
+
+@media screen and (max-width: 420px) {
+   html{
+      font-size: 0.8em;
+   }
+}
+@media screen and (max-width: 300px) {
+   html{
+      word-break: break-all;
+   }
+}

@@ -1,5 +1,11 @@
 :root{
-   --background-color: white;
+   --сolor-black: #0D0D0D;
+   --сolor-grey: #262626;
+   --сolor-white: #ffffff;
+   --сolor-white-dark: #e7e7e7;
+   --color-green: #242611;
+   --color-warning: rgb(235, 84, 84);
+   --color-primary: rgb(82, 96, 253);
 }
 
 .anim{

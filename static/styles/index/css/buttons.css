@@ -1,0 +1,45 @@
+.btns {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btns ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns ul li {
+  position: relative;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.btns ul li::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 105%;
+  transform: scale(1, 1);
+  width: 0%;
+  height: 0.1rem;
+  background-color: black;
+  transition: 0.2s;
+  opacity: 0;
+}
+.btns ul li:hover:not(.notAllowed)::before {
+  width: 100%;
+  left: 0;
+  transform: scale(1.2, 1);
+  opacity: 1;
+}
+.btns .notAllowed {
+  opacity: 0.6;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=buttons.css.map */

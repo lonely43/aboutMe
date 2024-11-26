@@ -13,7 +13,7 @@
       justify-content: center;
       align-items: center;
 
-      background-color: #000000;
+      background-color: var(--сolor-black);
 
       .info{
          padding: 0 1rem;
@@ -37,49 +37,33 @@
                font-weight: 400;
                letter-spacing: 1px;
             }
-            ul{
-               list-style: none;
-               display: flex;
-               gap: .6rem;
-               li{
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  a{
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;
-                     position: relative;
-                     z-index: 1;
-                     transition: transform 200ms;
 
-                     &:hover{
-                        transform: scale(1.1);
-                     }
+            a{
+               padding: 0.4rem 0;
 
-                     &::after{
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%,-50%);
-                        content: "";
-                        height: 90%;
-                        width: 90%;
-                        z-index: -1;
-                        border-radius: 2rem;
-                        background-color: rgb(255, 255, 255);
-                     }
-                     img{
-                        border-radius: 2rem;
-                        max-width: 3rem;
-                     }
-                  }
+               width: 100%;
+               max-width: 8rem;
+
+               text-align: center;
+               font-size: 1em;
+               color: var(--color-white);
+
+               background-color: transparent;
+               border: 1px solid transparent;
+               border-color: var(--color-white);
+               border-radius: .4rem;
+
+               cursor: pointer;
+
+               transition-duration: 200ms;
+               transition-property: opacity, transform;
+
+               &:hover{
+                  transform: scale(0.92);
+                  opacity: 0.6;
                }
             }
          }
-      }
-      .links{
-         
       }
    }
 
@@ -97,6 +81,6 @@
       height: 46px;
    }
    .custom-shape-divider-bottom-1719755588 .shape-fill {
-      fill: #000000;
+      fill: var(--color-black);
    }
 }

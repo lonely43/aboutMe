@@ -1,0 +1,22 @@
+.title {
+  margin: auto auto;
+}
+.title h1 {
+  font-size: 10em;
+}
+.title p {
+  font-size: 2em;
+  font-weight: 300;
+}
+@media screen and (max-width: 1000px) {
+  .title h1 {
+    font-size: calc(20vw - 1rem);
+  }
+}
+@media screen and (max-width: 300px) {
+  .title h1 {
+    font-size: 2.9em;
+  }
+}
+
+/*# sourceMappingURL=title.css.map */
