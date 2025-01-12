@@ -27,14 +27,7 @@
             let marks = el.getAttribute("marks").split(" ")
 
             if(isLegit(marks, selected)){
-               if(filteredCards.indexOf(el) < 0){
-                  filteredCards.push(el)
-               }
-            }
-            else{
-               if(filteredCards.indexOf(el) >= 0){
-                  filteredCards.splice(selected.indexOf(index),1)
-               }
+               filteredCards.push(el)
             }
          })
       }
