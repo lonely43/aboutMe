@@ -53,14 +53,11 @@
    }
 
    function isLegit(marks, selected){
-      let legit = true
-
       for(i = 0; i < selected.length; i++){
          if(!(marks.includes(selected[i]))){
             return false
          }
       }
-
-      return legit
+      return true
    }
 }
